@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi vivero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <h1>Agrega una planta</h1>
+
+        <input type="text" id="nombre"
+            placeholder="Nombre de la planta">
+
+        <input type="number" id="precio"
+            placeholder="Ingresa el precio">
+
+        <input type="text" id="dimension"
+            placeholder="Ingresa su dimensión: EJ: Grande/Mediana/Pequeña">
+
+        <input type="number" id="stock"
+            placeholder="Ingresa tu stock">
+
+        <button id="agregar">Agregar</button>
+    </div>
+
+    <h1>Plantas registradas</h1>
+
+    <div class="busqueda">
+
+        <input type="text" id="buscar"
+            placeholder="Buscar planta por nombre">
+
+        <button id="limpiarBusqueda">
+            Limpiar búsqueda
+        </button>
+
+    </div>
+
+    <div class="lista">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Dimension</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaPlantas">
+            </tbody>
+
+        </table>
+
+        <p id="mensaje"></p>
+
+    </div>
+
+    <script src="db.js" type="module"></script>
+
+</body>
+</html>
